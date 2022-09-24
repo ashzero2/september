@@ -4,19 +4,26 @@
   import Gallery from "./lib/Gallery.svelte";
   import Gratitude from "./lib/Gratitude.svelte";
   import Para from "./lib/Para.svelte";
+  import {
+    Alarm,
+    NotePencil,
+    Image,
+    Calendar,
+    Heartbeat,
+  } from "phosphor-svelte";
 </script>
 
 <main>
   <Router>
     <nav>
       <div class="title">
-        <h4>Happy Monthversary</h4>
+        <h4>Happy Monthversary <Heartbeat size={25} /></h4>
       </div>
       <div class="links">
-        <Link class="link" to="/">Home</Link>
-        <Link class="link" to="para">Para</Link>
-        <Link class="link" to="gallery">Gallery</Link>
-        <Link class="link" to="gratitude">Gratitude</Link>
+        <Link class="link" to="/"><Alarm size={25} /></Link>
+        <Link class="link" to="para"><NotePencil size={25} /></Link>
+        <Link class="link" to="gallery"><Image size={25} /></Link>
+        <Link class="link" to="gratitude"><Calendar size={25} /></Link>
       </div>
     </nav>
     <div>

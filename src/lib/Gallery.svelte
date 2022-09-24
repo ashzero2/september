@@ -7,22 +7,22 @@
     var images = [
         {
             name: "Lovable Image",
-            path: "images/pic1.jpg",
+            path: "images/wallpaper.png",
             text: "Enaku epome pidicha image, this will remain in our heart forever",
         },
         {
             name: "Cute Couples",
-            path: "images/pic2.jpg",
+            path: "images/wallpaper.png",
             text: "As u know bb, see this image, we are literally the best couples out there, love u",
         },
         {
             name: "My Queen",
-            path: "images/pic3.jpg",
+            path: "images/wallpaper.png",
             text: "Yes, ofcourse my precious and cute queen and princess of my heart",
         },
         {
             name: "Love You",
-            path: "images/pic4.jpg",
+            path: "images/wallpaper.png",
             text: "IDK why but i like this picture so much, daily morning ill see this picture and admire how i got a cutie like u as my girl :) love u",
         },
     ];
@@ -33,7 +33,7 @@
     <Carousel bind:this={carousel}>
         {#each images as image}
             <div transition:fly={{ y: 200, duration: 2000 }}>
-                <img src={image.path} alt="" />
+                <img src={image.path} height="500" width="800" alt="" />
                 <h5>{image.name}</h5>
                 <p>{image.text}</p>
             </div>
